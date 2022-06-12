@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/teal_700">
+    android:background="@color/white">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
+        app:elevation="0dp"
         android:theme="@style/Theme.SmartShamba.AppBarOverlay"
-        android:background="@color/ss_grey"
+        android:background="@color/teal_700"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,14 +23,10 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             app:titleMarginStart="50dp"
-            android:background="@color/teal_700"
+            android:background="@drawable/app_bar_main_bg"
             app:popupTheme="@style/Theme.SmartShamba.PopupOverlay" />
     </com.google.android.material.appbar.AppBarLayout>
 
-
-
-    <include layout="@layout/content_main"
-        android:id="@+id/include" />
 
 
 

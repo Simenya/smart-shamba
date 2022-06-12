@@ -8,7 +8,11 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.app.smartshamba.fragments.HomeFragment"
-        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/marketPlace2"
+        android:name="com.app.smartshamba.MarketPlace"
+        android:label="activity_market_place"
+        tools:layout="@layout/activity_market_place" />
 
 </navigation>

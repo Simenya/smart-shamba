@@ -1,7 +1,9 @@
 package com.app.smartshamba
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -20,9 +22,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
+        findViewById<TextView>(R.id.marketPlaceId).setOnClickListener {
+            startActivity(Intent(this, MarketPlace::class.java))
+        }
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
@@ -33,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.homeFragment, R.id.nav_gallery, R.id.nav_slideshow
+                R.id.homeFragment, R.id.marketPlace2
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
