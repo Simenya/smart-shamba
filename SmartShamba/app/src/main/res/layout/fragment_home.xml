@@ -129,16 +129,15 @@ android:fillViewport="true">
             </androidx.cardview.widget.CardView>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginStart="1dp"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/bg_main_home_frag"
+            android:background="@drawable/tomatoes"
             android:elevation="3dp"
-            android:orientation="vertical"
-            android:padding="5dp"
-            android:translationX="5dp" />
+            android:translationX="5dp"
+            app:shapeAppearance="@style/bottom_left_radius_image"/>
     </LinearLayout>
 
     <RelativeLayout
@@ -152,8 +151,10 @@ android:fillViewport="true">
         <LinearLayout
             android:id="@+id/scroll"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="180dp"
+            android:layout_above="@+id/textBtnBottomId"
             android:layout_marginTop="15dp"
+            android:layout_marginBottom="0dp"
             android:background="@color/ss_transparent"
             android:orientation="vertical"
             android:padding="3dp">
@@ -198,8 +199,8 @@ android:fillViewport="true">
                     android:padding="2dp">
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="210dp"
-                        android:layout_height="110dp"
+                        android:layout_width="250dp"
+                        android:layout_height="130dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:translationZ="3dp"
@@ -214,8 +215,8 @@ android:fillViewport="true">
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="210dp"
-                        android:layout_height="110dp"
+                        android:layout_width="250dp"
+                        android:layout_height="130dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:translationZ="3dp"
@@ -230,8 +231,8 @@ android:fillViewport="true">
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="210dp"
-                        android:layout_height="110dp"
+                        android:layout_width="250dp"
+                        android:layout_height="130dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:translationZ="3dp"
@@ -246,8 +247,8 @@ android:fillViewport="true">
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="210dp"
-                        android:layout_height="110dp"
+                        android:layout_width="250dp"
+                        android:layout_height="130dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:translationZ="3dp"
@@ -262,8 +263,8 @@ android:fillViewport="true">
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="210dp"
-                        android:layout_height="110dp"
+                        android:layout_width="250dp"
+                        android:layout_height="130dp"
                         android:layout_gravity="center"
                         android:layout_margin="10dp"
                         android:translationZ="3dp"
@@ -282,6 +283,7 @@ android:fillViewport="true">
         </LinearLayout>
 
         <RelativeLayout
+            android:id="@+id/textBtnBottomId"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
@@ -294,7 +296,7 @@ android:fillViewport="true">
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_alignParentStart="true"
-                android:layout_toStartOf="@+id/marketPlace"
+                android:layout_toStartOf="@+id/marketPlaceId"
                 android:background="@drawable/news_feeds_btn"
                 android:fontFamily="@font/arbutus"
                 android:gravity="center"
@@ -304,7 +306,7 @@ android:fillViewport="true">
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/marketPlace"
+                android:id="@+id/marketPlaceId"
                 android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:layout_alignParentEnd="true"
