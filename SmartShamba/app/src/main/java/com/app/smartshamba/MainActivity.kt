@@ -3,6 +3,7 @@ package com.app.smartshamba
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.widget.ImageView
 import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -14,6 +15,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.app.smartshamba.databinding.ActivityMainBinding
+import com.app.smartshamba.fragments.FarmActivitiesDialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +26,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        findViewById<ImageView>(R.id.manageActivities).setOnClickListener {
+            var dialog = FarmActivitiesDialog()
+
+            dialog.show(supportFragmentManager, "Activities")
+        }
 
 
         findViewById<TextView>(R.id.marketPlaceId).setOnClickListener {
