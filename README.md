@@ -1,7 +1,7 @@
 # smart-shamba
 Smart shamba is an agricultural innovation that aims helping Ugandan farmers improve on their efficiency while carrying out their activities, from information access about any agric related topic to purchasing farm inputs. Farmers are able to monitor and manage all their  farm operations through the smart shamba app
 
-App UI
+# App UI
 
 ![splash screen](https://user-images.githubusercontent.com/62070508/172539003-e3aa658b-7357-4bf1-9ee0-197f8a18e8fb.png)
 
@@ -9,9 +9,10 @@ App UI
 
 ![signup](https://user-images.githubusercontent.com/62070508/172538990-bc51e71a-b603-4575-bd3f-a5bf8823d5f2.png)
 
-![home_screen](https://user-images.githubusercontent.com/62070508/172538974-6922aa1b-fcf8-4f8e-b808-384a6be7c4af.png)
+![home_screen](https://user-images.githubusercontent.com/62070508/173275378-12ef1d9a-b1af-4145-a741-e7164dc9a7b8.png)
 
-![home_screen – 1](https://user-images.githubusercontent.com/62070508/172539008-f113ad56-e194-472d-8b99-2f3f0473b774.png)
+![home_screen – 1](https://user-images.githubusercontent.com/62070508/173275391-2eec76ce-d80a-423a-b545-c438929ba30d.png)
+
 
 ![home_screen – 2](https://user-images.githubusercontent.com/62070508/172539020-f9023e3e-5494-4729-9bd7-ca379fb79c87.png)
 
