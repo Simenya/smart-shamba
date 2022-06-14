@@ -37,10 +37,10 @@
             android:text="Create Activities" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/viewActivitiesBtnId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View Activites " />
+            android:text="View Activities " />
 
         <Button
             android:layout_width="wrap_content"
