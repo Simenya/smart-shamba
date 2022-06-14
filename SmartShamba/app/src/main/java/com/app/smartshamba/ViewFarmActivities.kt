@@ -36,14 +36,14 @@ class ViewFarmActivities : AppCompatActivity() {
             "Onions"
         )
         val weatherIcon:Array<Int> = arrayOf(
-            R.drawable.fruits, R.drawable.fruits, R.drawable.fruits,
-            R.drawable.fruits, R.drawable.fruits, R.drawable.fruits,
+            R.drawable.sun, R.drawable.storm, R.drawable.thunderstorm,
+            R.drawable.rainy, R.drawable.sun, R.drawable.cloudy,
         )
         val activityWeather:Array<String> = arrayOf(
             "SUNNY",
             "STORM",
             "THUNDER STORM",
-            "RAINNY",
+            "RAINY",
             "SUNNY",
             "CLOUDY"
         )

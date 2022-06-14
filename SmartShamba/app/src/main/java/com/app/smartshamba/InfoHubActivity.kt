@@ -22,8 +22,8 @@ class InfoHubActivity : AppCompatActivity() {
             "Onions"
         )
         val projImage:Array<Int> = arrayOf(
-            R.drawable.fruits, R.drawable.fruits, R.drawable.fruits,
-            R.drawable.fruits, R.drawable.fruits, R.drawable.fruits,
+            R.drawable.maize, R.drawable.tomatoes2, R.drawable.passionfruit,
+            R.drawable.rabbits, R.drawable.poultry, R.drawable.onions,
         )
 
         val gridView = binding.infoGridViewId

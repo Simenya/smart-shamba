@@ -37,7 +37,7 @@
                 android:layout_margin="3dp"
                 android:text="Activity Name"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -51,7 +51,7 @@
                     android:layout_margin="3dp"
                     android:text="DATE: "
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -61,7 +61,7 @@
                     android:layout_margin="3dp"
                     android:text="12, JUNE 2022"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="10sp"
                     android:textStyle="normal" />
 
             </LinearLayout>
@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:text="DESCRIPTION: "
                     android:textColor="@color/black"
-                    android:textSize="13sp"
+                    android:textSize="10sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -86,44 +86,49 @@
                     android:layout_height="wrap_content"
                     android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolo"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
+                    android:textSize="11sp"
                     android:textStyle="normal" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:padding="5dp"
             android:layout_alignParentBottom="true"
             android:background="@drawable/bg_cards_corner_botton"
-            android:backgroundTint="@color/ss_black_glass"
+            android:backgroundTint="@color/teal_700"
             android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="5dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="PROJECTED WEATHER: "
                 android:textColor="@color/black"
-                android:textSize="13sp"
+                android:textSize="10sp"
                 android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                android:gravity="center"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:id="@+id/activityWeatherIcon"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/fruits"
-                    android:layout_marginEnd="5dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:src="@drawable/fruits" />
+
                 <TextView
                     android:id="@+id/activityWeatherId"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SUNNY 20"
                     android:textColor="@color/white"
-                    android:textSize="11.5sp"
+                    android:textSize="11sp"
                     android:textStyle="bold"
                     tools:ignore="SmallSp" />
             </LinearLayout>
