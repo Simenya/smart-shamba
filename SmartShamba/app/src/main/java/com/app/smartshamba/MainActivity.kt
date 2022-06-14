@@ -35,10 +35,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-        findViewById<TextView>(R.id.marketPlaceId).setOnClickListener {
-            startActivity(Intent(this, MarketPlace::class.java))
-        }
-
         setSupportActionBar(binding.appBarMain.toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -59,4 +55,5 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
 }

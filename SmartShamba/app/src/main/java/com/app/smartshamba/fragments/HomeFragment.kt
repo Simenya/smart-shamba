@@ -6,10 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.app.smartshamba.InfoHubActivity
-import com.app.smartshamba.MarketPlace
-import com.app.smartshamba.R
+import com.app.smartshamba.ViewFarmActivities
 import com.app.smartshamba.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -22,7 +20,9 @@ class HomeFragment : Fragment() {
         binding.infoHubId.setOnClickListener {
             startActivity(Intent(activity, InfoHubActivity::class.java))
         }
-
+        binding.seeAllActivitiesId.setOnClickListener {
+            startActivity(Intent(activity, ViewFarmActivities::class.java))
+        }
         return binding.root
     }
 

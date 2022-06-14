@@ -1,8 +1,12 @@
 package com.app.smartshamba
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.app.smartshamba.databinding.ActivityViewFarmActivitiesBinding
+import com.app.smartshamba.fragments.FarmActivitiesDialog
+import com.app.smartshamba.fragments.ViewActivityDetailsFragment
 
 class ViewFarmActivities : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,8 +65,10 @@ class ViewFarmActivities : AppCompatActivity() {
         val adapter = ViewActivitiesAdapter(this, listOfArray)
         gridView.adapter = adapter
 
-//        gridView.setOnClickListener {parent, view, position, id ->
-//            val intent = Intent(this, InfoHubDetails::class.java)
-//        }
+        gridView.setOnItemClickListener { parent, view, position, id ->
+            var dialog = ViewActivityDetailsFragment()
+
+            dialog.show(supportFragmentManager, "Activities")
+        }
     }
 }
