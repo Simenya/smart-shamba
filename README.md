@@ -28,4 +28,4 @@ Smart shamba is an agricultural innovation that aims helping Ugandan farmers imp
 
 ![weather](https://user-images.githubusercontent.com/62070508/173541267-c7a6c5ba-9424-4af6-8e0e-f320e41641e6.png)
 
-
+![GROW IT – DETAILS](https://user-images.githubusercontent.com/62070508/173706596-6f89405a-4d6f-4fc1-9c1c-e8f2cbb61f76.png)
