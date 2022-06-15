@@ -3,14 +3,13 @@ package com.app.smartshamba
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
-import com.app.smartshamba.databinding.ActivityInfoHubGridBinding
+import android.widget.GridView
+import com.app.smartshamba.fragments.DiscoverDetailsFragment
 
 class InfoHubActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding:ActivityInfoHubGridBinding = ActivityInfoHubGridBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_info_hub_grid)
 
         //Generating A data source
         val projName:Array<String> = arrayOf(
@@ -26,7 +25,7 @@ class InfoHubActivity : AppCompatActivity() {
             R.drawable.rabbits, R.drawable.poultry, R.drawable.onions,
         )
 
-        val gridView = binding.infoGridViewId
+        val gridView = findViewById<GridView>(R.id.infoGridViewId)
 
         val listOfArray:ArrayList<InfoHubModel> = arrayListOf()
 
@@ -38,8 +37,10 @@ class InfoHubActivity : AppCompatActivity() {
         val adapter = InfoHubAdapter(this, listOfArray)
         gridView.adapter = adapter
 
-//        gridView.setOnClickListener {parent, view, position, id ->
-//            val intent = Intent(this, InfoHubDetails::class.java)
-//        }
+        gridView.setOnItemClickListener {parent, view, position, id ->
+            val intent = Intent(this, DiscoverDetailsFragment::class.java)
+            intent.putExtra("positon", position)
+            startActivity(intent)
+        }
     }
 }

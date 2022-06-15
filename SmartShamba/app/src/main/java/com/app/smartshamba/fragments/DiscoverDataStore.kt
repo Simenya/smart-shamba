@@ -19,6 +19,7 @@ class DiscoverDataStore {
         overview = arrayOf(
             "Overview", "Preparation", "Disease Control", "Harvesting", "Conclusion"
         )
+        preparations
 
     }
 }

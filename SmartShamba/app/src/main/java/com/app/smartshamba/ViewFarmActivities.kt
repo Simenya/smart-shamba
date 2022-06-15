@@ -4,15 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.app.smartshamba.databinding.ActivityViewFarmActivitiesBinding
+import android.widget.GridView
 import com.app.smartshamba.fragments.FarmActivitiesDialog
 import com.app.smartshamba.fragments.ViewActivityDetailsFragment
 
 class ViewFarmActivities : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding:ActivityViewFarmActivitiesBinding = ActivityViewFarmActivitiesBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        setContentView(R.layout.activity_view_farm_activities)
 
         //Generating A data source
         val activityName:Array<String> = arrayOf(
@@ -52,7 +51,7 @@ class ViewFarmActivities : AppCompatActivity() {
             "CLOUDY"
         )
 
-        val gridView = binding.gridView
+        val gridView = findViewById<GridView>(R.id.gridView)
 
         val listOfArray:ArrayList<ActivitiesDataModels> = arrayListOf()
 
